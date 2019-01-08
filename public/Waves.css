@@ -1,0 +1,54 @@
+.BarWrapper {
+  display: flex;
+  transform: rotateX(180deg);
+}
+
+.BarWrapper:hover > * {
+  cursor: pointer;
+  background: white;
+}
+
+.AnimatedBar {
+  width: 3px;
+  border-right: 1px solid grey;
+  margin-top: 1.3px;
+  animation-name: orangeWave;
+  animation-timing-function: linear;
+}
+
+@keyframes orangeWave {
+  0% {
+    background: rgb(186, 184, 184);
+  }
+  100% {
+    background: #ff3500;
+  }
+}
+
+.Bar {
+  width: 3px;
+  background: rgb(213, 211, 211);
+  border-right: 1px solid grey; /*og border 0.1px */
+  margin-top: 1.3px;
+}
+
+.MirrorWrapper {
+  display: flex;
+}
+
+.MirrorWrapper:hover {
+  cursor: pointer;
+}
+
+.Mirror {
+  width: 3px;
+  background: rgb(186, 184, 184);
+  border-right: 1px solid grey;
+}
+
+.AnimatedMirror {
+  width: 3px;
+  border-right: 1px solid grey;
+  animation-name: orangeWave;
+  animation-timing-function: linear;
+}

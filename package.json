@@ -1,0 +1,30 @@
+{
+  "name": "jane_proxy",
+  "version": "1.0.0",
+  "description": "DemocritusCloud_FEC",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janeslee/Jane_Proxy.git"
+  },
+  "author": "Jane Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janeslee/Jane_Proxy/issues"
+  },
+  "homepage": "https://github.com/janeslee/Jane_Proxy#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "request": "^2.88.0"
+  }
+}
