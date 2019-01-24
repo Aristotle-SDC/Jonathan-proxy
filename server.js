@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 
 // justin's component
 app.use('/:id', (req, res) => {
-  var url = `http://localhost:3001/${req.params.id}`;
+  var url = `http://ec2-54-219-135-12.us-west-1.compute.amazonaws.com:3001/${req.params.id}`;
   req.pipe(request(url)).pipe(res);
 });
 
@@ -81,5 +81,5 @@ app.use('/:id', (req, res) => {
 // });
 
 app.listen(port, () => {
-  console.log(`server running at: http://localhost:${port}`);
+  console.log(`server running at: http://ec2-54-219-135-12.us-west-1.compute.amazonaws.com:${port}`);
 });
